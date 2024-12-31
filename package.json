@@ -1,7 +1,7 @@
 {
     "name": "tech-blog",
     "version": "1.0.0",
-    "description": "",
+    "description": "a social network for those that work with tech",
     "main": "server.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",

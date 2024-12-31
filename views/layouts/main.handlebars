@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/public/css/jass.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <h1 class="header">Tech Blog</h1>
+    <nav class="navBar">
+        <h2>
+            <a href="/home">Home</a>
+        </h2>
+        <h2>
+            <a href="/dashboard">Dashboard</a>
+        </h2>
+        {{#if logged_in}}
+        <h2>
+            <a>Login</a>
+        </h2>
+        {{else}}
+        <h2>
+            <a>Logout</a>
+        </h2>
+        {{/if}}
+    </nav>
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        <h2>
+            <a href="https://github.com/Ohkrah/Tech-Blog">Repository</a>
+        </h2>
+    </footer>
+    {{#if logged_in}}
+    <script src="/public/js/logout.js"></script>
+    {{/if}}
+
+</body>
+</html>
